@@ -20,15 +20,18 @@ int main(void)
 			int firstDigit2 = j / 10;
 			int secondDigit2 = j % 10;
 
-			putchar(firstDigit1 + '0');
-			putchar(secondDigit1 + '0');
-			putchar(' ');
-			putchar(firstDigit2 + '0');
-			putchar(secondDigit2 + '0');
-			if (i != 99 || j != 99)
+			if (i != j)
 			{
-				putchar(',');
+				putchar(firstDigit1 + '0');
+				putchar(secondDigit1 + '0');
 				putchar(' ');
+				putchar(firstDigit2 + '0');
+				putchar(secondDigit2 + '0');
+				if (i != 99 || j != 99)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
