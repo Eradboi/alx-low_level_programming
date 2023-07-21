@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_diagonal - prints a diagonal line using backward slashes
  * @n: number of times
@@ -16,9 +17,7 @@ void print_diagonal(int n)
 		for (i = 0 ; i < n ; i++)
 		{
 			for (j = 0 ; j <= i ; j++)
-			{
 				_putchar(' ');
-			}
 			_putchar('\\');
 			_putchar('\n');
 		}
